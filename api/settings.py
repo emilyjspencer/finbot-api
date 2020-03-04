@@ -1,3 +1,5 @@
+import django_heroku
+
 """
 Django settings for api project.
 
@@ -125,3 +127,6 @@ STATIC_URL = '/static/'
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
 )
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
